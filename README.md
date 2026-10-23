@@ -1,8 +1,8 @@
-# Project 1: Host a Website on AWS
+# Project : Host a Website on AWS
 
 A static website hosted the way a real team would do it: private storage, a CDN in front, least-privilege access, a custom VPC, and monitoring.
 
-**Live URL:** `https://<your-distribution>.cloudfront.net` (add after CloudFront is live)
+**Live URL:** https://d16scnbgit5gh3.cloudfront.net/
 
 ![Architecture](architecture.png)
 
@@ -85,9 +85,3 @@ A security group is stateful and works at the instance level (allow rules only).
 
 Everything here runs on free-tier or free-by-design services. The only paid items I avoided were NAT gateways, WAF and a custom domain.
 
-## What I would add next
-
-- Custom domain with Route 53 and an ACM certificate.
-- Automated deploys (GitHub Actions) using an IAM role.
-- WAF rules for production traffic.
-- Infrastructure as code (Terraform or CloudFormation).
